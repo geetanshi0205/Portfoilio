@@ -66,15 +66,4 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Form submission handling
-const contactForm = document.querySelector('.contact form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Here you would typically send the form data to a server
-        // For now, we'll just show a success message
-        alert('Thank you for your message! I will get back to you soon.');
-        this.reset();
-    });
-}
+// No form submission handling needed as we've simplified the contact section

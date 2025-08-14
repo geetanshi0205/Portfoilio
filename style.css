@@ -235,21 +235,15 @@ span{
     }
 }
 
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
+@keyframes words {
+    0% {
+        content: "Agentic AI Developer";
     }
-    21%, 40%{
-        content: "Agentic AI";
+    33% {
+        content: "Creative Content Strategist";
     }
-    41%, 60%{
-        content: "Content";
-    }
-    61%, 80%{
-        content: "Frontend Developer";
-    }
-    81%, 100%{
-        content: "Programmer";
+    66% {
+        content: "Full-Stack Web Developer";
     }
 }
 
@@ -304,7 +298,7 @@ span{
     }
 }
 
-/* Services Section Styling */
+/* Projects Section Styling */
 .heading {
     text-align: center;
     font-size: 4.5rem;
@@ -349,6 +343,17 @@ span{
 .services-box p {
     font-size: 1.6rem;
     margin-bottom: 2rem;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-buttons .btn {
+    padding: 1rem 1.8rem;
+    font-size: 1.4rem;
 }
 
 /* Skills Section Styling */
@@ -413,51 +418,51 @@ span{
     background: #b74b4b;
 }
 
-.skills-bar .bar .progress-line.html span {
+.skills-bar .bar .progress-line .html {
     width: 90%;
 }
 
-.skills-bar .bar .progress-line.css span {
+.skills-bar .bar .progress-line .css {
     width: 85%;
 }
 
-.skills-bar .bar .progress-line.js span {
+.skills-bar .bar .progress-line .js {
     width: 75%;
 }
 
-.skills-bar .bar .progress-line.react span {
+.skills-bar .bar .progress-line .react {
     width: 70%;
 }
 
-.skills-bar .bar .progress-line.bootstrap span {
-    width: 80%;
+.skills-bar .bar .progress-line .python {
+    width: 75%;
 }
 
-.skills-bar .bar .progress-line.nodejs span {
+.skills-bar .bar .progress-line .cloudai {
+    width: 70%;
+}
+
+.skills-bar .bar .progress-line .crewai {
     width: 65%;
 }
 
-.skills-bar .bar .progress-line.express span {
-    width: 60%;
-}
-
-.skills-bar .bar .progress-line.mongodb span {
-    width: 55%;
-}
-
-.skills-bar .bar .progress-line.python span {
-    width: 75%;
-}
-
-.skills-bar .bar .progress-line.java span {
-    width: 70%;
-}
-
-.skills-bar .bar .progress-line.git span {
+.skills-bar .bar .progress-line .langchain {
     width: 80%;
 }
 
-.skills-bar .bar .progress-line.uiux span {
+.skills-bar .bar .progress-line .langgraph {
+    width: 75%;
+}
+
+.skills-bar .bar .progress-line .git {
+    width: 85%;
+}
+
+.skills-bar .bar .progress-line .github {
+    width: 80%;
+}
+
+.skills-bar .bar .progress-line .uiux {
     width: 65%;
 }
 
@@ -556,42 +561,56 @@ span{
 }
 
 /* Contact Section Styling */
-.contact form {
+.contact-content {
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
 }
 
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.contact-content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
 }
 
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: white;
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
     background: #161616;
     border-radius: 0.8rem;
-    margin: 0.7rem 0;
     border: 0.2rem solid #b74b4b;
+    transition: 0.5s ease;
 }
 
-.contact form .input-box input {
-    width: 49%;
+.contact-item:hover {
+    border-color: #b74b4b;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #b74b4b;
 }
 
-.contact form textarea {
-    resize: none;
+.contact-item i {
+    font-size: 2.4rem;
+    color: #b74b4b;
 }
 
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
+.contact-item a {
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #b74b4b;
 }
 
 /* Footer Styling */

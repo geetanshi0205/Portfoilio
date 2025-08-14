@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Geetanshi - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <title>Geetanshi's Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
+    <!-- Header Section -->
+    <header class="header">
         <a href="#" class="logo">Geetanshi</a>
 
-        <i class="fas fa-bars" id="menu-icon"></i>
+        <i class='bx bx-menu' id="menu-icon"></i>
 
         <nav>
             <a href="#home" class="active">Home</a>
@@ -23,45 +23,61 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+    <!-- Home Section -->
     <section class="home" id="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
-        </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Geetanshi</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p>B.Tech CSE student ('27 batch) passionate about web development and creating beautiful, functional websites. I love solving problems through code and continuously learning new technologies.</p>
-            <div class="social-icons">
-                <a href="https://linkedin.com/in/geetanshi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/geetanshi0205" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <h3>Hi, it's Geet.</h3>
+            <h1>Geetanshi Goel</h1>
+            <h3>And I'm a <span class="typing-text">Web Developer</span></h3>
+            <p>I'm Geetanshi, an Agentic AI Developer passionate about building intelligent autonomous agents, a Creative Content Strategist crafting impactful narratives, and a Full-Stack Web Developer bringing ideas to life on the web.</p>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/geetanshi-goel-49ba5832b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/geetanshi0205" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://twitter.com/geetanshigoel" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://medium.com/@geetanshigoel63" target="_blank"><i class='bx bxl-medium'></i></a>
+                <a href="mailto:geetanshigoel63@gmail.com"><i class='bx bx-envelope'></i></a>
             </div>
-            <a href="#contact" class="btn">Hire me</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/profile.png" alt="Profile Image">
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section class="services" id="projects">
+    <section class="projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
+
         <div class="services-container">
             <div class="services-box">
-                <i class="fas fa-code"></i>
+                <i class='bx bx-bot'></i>
+                <h3>Agentic AI</h3>
+                <p>An intelligent autonomous agent system built with advanced AI capabilities to perform complex tasks and decision-making.</p>
+                <div class="project-buttons">
+                    <a href="https://medium.com/@geetanshigoel/agentic-ai-project" target="_blank" class="btn">Read Blog</a>
+                    <a href="https://github.com/geetanshigoel/agentic-ai" target="_blank" class="btn">View Code</a>
+                </div>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
                 <h3>Portfolio Website</h3>
-                <p>A responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
-                <a href="#" class="btn">View Project</a>
+                <p>A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+                <div class="project-buttons">
+                    <a href="#" target="_blank" class="btn">See Demo</a>
+                    <a href="https://github.com/geetanshigoel/portfolio" target="_blank" class="btn">View Code</a>
+                </div>
             </div>
+
             <div class="services-box">
-                <i class="fas fa-robot"></i>
-                <h3>AI Chatbot</h3>
-                <p>An intelligent chatbot application that uses natural language processing to interact with users.</p>
-                <a href="#" class="btn">View Project</a>
-            </div>
-            <div class="services-box">
-                <i class="fas fa-shopping-cart"></i>
+                <i class='bx bx-store'></i>
                 <h3>E-commerce Platform</h3>
-                <p>A full-featured online shopping platform with product catalog, cart, and checkout functionality.</p>
-                <a href="#" class="btn">View Project</a>
+                <p>A full-stack e-commerce platform with user authentication, product catalog, and payment integration.</p>
+                <div class="project-buttons">
+                    <a href="#" target="_blank" class="btn">Explore Project</a>
+                    <a href="https://github.com/geetanshigoel/ecommerce" target="_blank" class="btn">View Code</a>
+                </div>
             </div>
         </div>
     </section>
@@ -69,103 +85,139 @@
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <h2 class="heading">My <span>Skills</span></h2>
+
         <div class="skills-container">
             <div class="skills-box">
-                <h3>Frontend Development</h3>
+                <h3>Web Development</h3>
                 <div class="skills-bar">
                     <div class="bar">
                         <div class="info">
                             <span>HTML</span>
                             <span>90%</span>
                         </div>
-                        <div class="progress-line html"><span></span></div>
+                        <div class="progress-line">
+                            <span class="html"></span>
+                        </div>
                     </div>
+
                     <div class="bar">
                         <div class="info">
                             <span>CSS</span>
                             <span>85%</span>
                         </div>
-                        <div class="progress-line css"><span></span></div>
+                        <div class="progress-line">
+                            <span class="css"></span>
+                        </div>
                     </div>
+
                     <div class="bar">
                         <div class="info">
                             <span>JavaScript</span>
                             <span>75%</span>
                         </div>
-                        <div class="progress-line js"><span></span></div>
+                        <div class="progress-line">
+                            <span class="js"></span>
+                        </div>
                     </div>
+
                     <div class="bar">
                         <div class="info">
-                            <span>React.js</span>
+                            <span>React</span>
                             <span>70%</span>
                         </div>
-                        <div class="progress-line react"><span></span></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>Bootstrap</span>
-                            <span>80%</span>
+                        <div class="progress-line">
+                            <span class="react"></span>
                         </div>
-                        <div class="progress-line bootstrap"><span></span></div>
                     </div>
                 </div>
             </div>
+
             <div class="skills-box">
-                <h3>Backend Development</h3>
-                <div class="skills-bar">
-                    <div class="bar">
-                        <div class="info">
-                            <span>Node.js</span>
-                            <span>65%</span>
-                        </div>
-                        <div class="progress-line nodejs"><span></span></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>Express.js</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="progress-line express"><span></span></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info">
-                            <span>MongoDB</span>
-                            <span>55%</span>
-                        </div>
-                        <div class="progress-line mongodb"><span></span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-box">
-                <h3>Other Skills</h3>
+                <h3>AI & Automation</h3>
                 <div class="skills-bar">
                     <div class="bar">
                         <div class="info">
                             <span>Python</span>
                             <span>75%</span>
                         </div>
-                        <div class="progress-line python"><span></span></div>
+                        <div class="progress-line">
+                            <span class="python"></span>
+                        </div>
                     </div>
+
                     <div class="bar">
                         <div class="info">
-                            <span>Java</span>
+                            <span>Cloud AI</span>
                             <span>70%</span>
                         </div>
-                        <div class="progress-line java"><span></span></div>
+                        <div class="progress-line">
+                            <span class="cloudai"></span>
+                        </div>
                     </div>
+
                     <div class="bar">
                         <div class="info">
-                            <span>Git & GitHub</span>
+                            <span>Crew AI</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-line">
+                            <span class="crewai"></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>LangChain</span>
                             <span>80%</span>
                         </div>
-                        <div class="progress-line git"><span></span></div>
+                        <div class="progress-line">
+                            <span class="langchain"></span>
+                        </div>
                     </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>LangGraph</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress-line">
+                            <span class="langgraph"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-box">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-bar">
+                    <div class="bar">
+                        <div class="info">
+                            <span>Git</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-line">
+                            <span class="git"></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>GitHub</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-line">
+                            <span class="github"></span>
+                        </div>
+                    </div>
+
                     <div class="bar">
                         <div class="info">
                             <span>UI/UX Design</span>
                             <span>65%</span>
                         </div>
-                        <div class="progress-line uiux"><span></span></div>
+                        <div class="progress-line">
+                            <span class="uiux"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,31 +243,44 @@
     <!-- Experience Section -->
     <section class="experience" id="experience">
         <h2 class="heading">My <span>Experience</span></h2>
+
         <div class="experience-container">
             <div class="experience-box">
                 <div class="experience-content">
                     <div class="content">
-                        <div class="year"><i class="fas fa-calendar"></i> 2023 - Present</div>
-                        <h3>Web Development Projects</h3>
-                        <p>Working on various web development projects to enhance my skills and build a strong portfolio.</p>
+                        <div class="year"><i class='bx bxs-calendar'></i> 2023 - Present</div>
+                        <h3>Core Web Developer — CXI</h3>
+                        <p>Developing and maintaining web applications, implementing responsive designs, and collaborating with cross-functional teams.</p>
                     </div>
-                </div>
-            </div>
-            <div class="experience-box">
-                <div class="experience-content">
+
                     <div class="content">
-                        <div class="year"><i class="fas fa-calendar"></i> 2023 - Present</div>
+                        <div class="year"><i class='bx bxs-calendar'></i> 2023 - Present</div>
+                        <h3>Ambassador — Fetch.ai</h3>
+                        <p>Representing Fetch.ai in the community, creating educational content, and promoting AI technologies.</p>
+                    </div>
+
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2023 - Present</div>
+                        <h3>Content Head — MLSA MIET</h3>
+                        <p>Leading content creation initiatives, developing educational materials, and managing a team of content creators.</p>
+                    </div>
+
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+                        <h3>Volunteer — Content Creation</h3>
+                        <p>Created engaging content for 2-3 college communities, developing communication materials and social media posts.</p>
+                    </div>
+
+                    <div class="content">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2022 - Present</div>
                         <h3>College Tech Club</h3>
-                        <p>Active member of the college's technology club, participating in hackathons, workshops, and collaborative coding projects.</p>
+                        <p>Led a team of developers in creating web applications for various college events and initiatives.</p>
                     </div>
-                </div>
-            </div>
-            <div class="experience-box">
-                <div class="experience-content">
+
                     <div class="content">
-                        <div class="year"><i class="fas fa-calendar"></i> 2023 - Present</div>
+                        <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2022</div>
                         <h3>Coding Community Lead</h3>
-                        <p>Leading a community of student developers, organizing coding sessions, and mentoring junior students in programming concepts.</p>
+                        <p>Organized coding workshops and hackathons to help students improve their programming skills.</p>
                     </div>
                 </div>
             </div>
@@ -225,27 +290,30 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+
+        <div class="contact-content">
+            <p>If you'd like to collaborate or have any questions, feel free to reach out.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <a href="mailto:geetanshigoel63@gmail.com">geetanshigoel63@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bxl-linkedin'></i>
+                    <a href="https://www.linkedin.com/in/geetanshi-goel-49ba5832b/" target="_blank">LinkedIn Profile</a>
+                </div>
             </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+        </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2023 by Geetanshi | All Rights Reserved.</p>
+            <p>Copyright &copy; 2025 | Geetanshi Goel | All Rights Reserved</p>
         </div>
+
         <div class="footer-iconTop">
-            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
