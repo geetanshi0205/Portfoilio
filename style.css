@@ -240,10 +240,10 @@ span{
         content: "Web Developer";
     }
     21%, 40%{
-        content: "CSE Student";
+        content: "Agentic AI";
     }
     41%, 60%{
-        content: "Web Designer";
+        content: "Content";
     }
     61%, 80%{
         content: "Frontend Developer";
@@ -423,6 +423,42 @@ span{
 
 .skills-bar .bar .progress-line.js span {
     width: 75%;
+}
+
+.skills-bar .bar .progress-line.react span {
+    width: 70%;
+}
+
+.skills-bar .bar .progress-line.bootstrap span {
+    width: 80%;
+}
+
+.skills-bar .bar .progress-line.nodejs span {
+    width: 65%;
+}
+
+.skills-bar .bar .progress-line.express span {
+    width: 60%;
+}
+
+.skills-bar .bar .progress-line.mongodb span {
+    width: 55%;
+}
+
+.skills-bar .bar .progress-line.python span {
+    width: 75%;
+}
+
+.skills-bar .bar .progress-line.java span {
+    width: 70%;
+}
+
+.skills-bar .bar .progress-line.git span {
+    width: 80%;
+}
+
+.skills-bar .bar .progress-line.uiux span {
+    width: 65%;
 }
 
 /* Education Section Styling */
