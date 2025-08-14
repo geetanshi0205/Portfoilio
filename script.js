@@ -66,4 +66,49 @@ window.addEventListener('scroll', () => {
     });
 });
 
+// Dynamic typing animation
+const roles = [ 
+    "AI Engineer", 
+    "Agent Developer", 
+    "Content Writer", 
+    "Creative Coder" 
+]; 
+
+let roleIndex = 0; 
+let charIndex = 0; 
+const typingSpeed = 100; // milliseconds per character 
+const erasingSpeed = 60; 
+const delayBetweenRoles = 1500; // pause before erasing 
+
+function type() { 
+    const typingText = document.querySelector(".typing-text");
+    if (!typingText) return;
+    
+    if (charIndex < roles[roleIndex].length) { 
+        typingText.textContent = roles[roleIndex].substring(0, charIndex + 1);
+        charIndex++; 
+        setTimeout(type, typingSpeed); 
+    } else { 
+        setTimeout(erase, delayBetweenRoles); 
+    } 
+} 
+
+function erase() { 
+    const typingText = document.querySelector(".typing-text");
+    if (!typingText) return;
+    
+    if (charIndex > 0) { 
+        typingText.textContent = roles[roleIndex].substring(0, charIndex - 1); 
+        charIndex--; 
+        setTimeout(erase, erasingSpeed); 
+    } else { 
+        roleIndex = (roleIndex + 1) % roles.length; 
+        setTimeout(type, typingSpeed); 
+    } 
+} 
+
+document.addEventListener("DOMContentLoaded", function () { 
+    if (roles.length) setTimeout(type, typingSpeed); 
+});
+
 // No form submission handling needed as we've simplified the contact section
