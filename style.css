@@ -37,6 +37,13 @@ header{
     z-index: 100;
 }
 
+#menu-icon {
+    font-size: 3.6rem;
+    color: #b74b4b;
+    display: none;
+    cursor: pointer;
+}
+
 .logo{
     font-size: 3rem;
     color: #b74b4b;
@@ -65,16 +72,20 @@ nav a.active{
 }
 
 @media(max-width:995px){
+    #menu-icon {
+        display: block;
+    }
+
     nav{
         position: absolute;
         display: none;
-        top: 0;
+        top: 100%;
         right: 0;
         width: 40%;
         border-left: 3px solid #b74b4b;
         border-bottom: 3px solid #b74b4b;
         border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
+        padding: 2rem;
         background-color: #161616;
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
@@ -229,22 +240,27 @@ span{
         content: "Web Developer";
     }
     21%, 40%{
-        content: "Developer";
+        content: "CSE Student";
     }
     41%, 60%{
         content: "Web Designer";
     }
     61%, 80%{
-        content: "Youtuber";
+        content: "Frontend Developer";
     }
     81%, 100%{
-        content: "Script Writer";
+        content: "Programmer";
     }
 }
 
 @media (max-width: 1000px){
     .home{
         gap: 4rem;
+    }
+
+    .services-container,
+    .skills-container {
+        gap: 2rem;
     }
 }
 
@@ -266,4 +282,312 @@ span{
         width: 70vw;
         margin-top: 4rem;
     }
+
+    .services-container,
+    .skills-container,
+    .education-container,
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .services-box,
+    .skills-box,
+    .education-box,
+    .experience-box {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Services Section Styling */
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-box {
+    flex: 1 1 30rem;
+    background: #161616;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid #b74b4b;
+    transition: .5s ease;
+}
+
+.services-box:hover {
+    border-color: #b74b4b;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: #b74b4b;
+    margin-bottom: 2rem;
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+/* Skills Section Styling */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-box {
+    flex: 1 1 30rem;
+    background: #161616;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    border: .2rem solid #b74b4b;
+    transition: .5s ease;
+}
+
+.skills-box:hover {
+    border-color: #b74b4b;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.skills-box h3 {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-bar .bar {
+    margin: 3rem 0;
+}
+
+.skills-bar .bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.skills-bar .bar .info span {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.skills-bar .bar .progress-line {
+    position: relative;
+    width: 100%;
+    height: 1rem;
+    background: #161616;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #b74b4b;
+}
+
+.skills-bar .bar .progress-line span {
+    position: absolute;
+    height: 100%;
+    border-radius: 0.5rem;
+    background: #b74b4b;
+}
+
+.skills-bar .bar .progress-line.html span {
+    width: 90%;
+}
+
+.skills-bar .bar .progress-line.css span {
+    width: 85%;
+}
+
+.skills-bar .bar .progress-line.js span {
+    width: 75%;
+}
+
+/* Education Section Styling */
+.education-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.education-box {
+    flex: 1 1 30rem;
+    background: #161616;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    border: .2rem solid #b74b4b;
+    transition: .5s ease;
+}
+
+.education-box:hover {
+    border-color: #b74b4b;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.education-content .content {
+    padding: 1.5rem;
+}
+
+.education-content .content .year {
+    font-size: 1.8rem;
+    color: #b74b4b;
+    padding-bottom: 0.5rem;
+}
+
+.education-content .content .year i {
+    padding-right: 0.5rem;
+}
+
+.education-content .content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.education-content .content p {
+    font-size: 1.6rem;
+}
+
+/* Experience Section Styling */
+.experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.experience-box {
+    flex: 1 1 30rem;
+    background: #161616;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    border: .2rem solid #b74b4b;
+    transition: .5s ease;
+}
+
+.experience-box:hover {
+    border-color: #b74b4b;
+    transform: scale(1.02);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.experience-content .content {
+    padding: 1.5rem;
+}
+
+.experience-content .content .year {
+    font-size: 1.8rem;
+    color: #b74b4b;
+    padding-bottom: 0.5rem;
+}
+
+.experience-content .content .year i {
+    padding-right: 0.5rem;
+}
+
+.experience-content .content h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.experience-content .content p {
+    font-size: 1.6rem;
+}
+
+/* Contact Section Styling */
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: #161616;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    border: 0.2rem solid #b74b4b;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: #161616;
+}
+
+.footer-text p {
+    font-size: 1.6rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background: #b74b4b;
+    border-radius: 0.8rem;
+    transition: 0.5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 25px #b74b4b;
+    transform: scale(1.1);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: black;
 }
