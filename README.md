@@ -12,6 +12,6 @@ Check it out here: [My Portfolio](https://geetanshi0205.github.io/Portfoilio/)
 
 ## Contact
 - GitHub: [geetanshi0205](https://github.com/geetanshi0205)
-- LinkedIn: [Your LinkedIn URL]
+- LinkedIn: [geetanshigoel](https://www.linkedin.com/in/geetanshi-goel-49ba5832b)
 - Email: geetanshigoel63@gmail.com
 
