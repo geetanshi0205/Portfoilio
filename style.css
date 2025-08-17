@@ -426,44 +426,69 @@ span{
 }
 
 .skills-bar .bar .progress-line .js {
-    width: 75%;
+    width: 80%;
 }
 
 .skills-bar .bar .progress-line .react {
+    width: 75%;
+}
+
+.skills-bar .bar .progress-line .vuejs {
+    width: 70%;
+}
+
+.skills-bar .bar .progress-line .agenticai {
+    width: 85%;
+}
+
+.skills-bar .bar .progress-line .claudeai {
+    width: 80%;
+}
+
+.skills-bar .bar .progress-line .dataauto {
+    width: 75%;
+}
+
+.skills-bar .bar .progress-line .mlconcepts {
     width: 70%;
 }
 
 .skills-bar .bar .progress-line .python {
-    width: 75%;
+    width: 95%;
 }
 
-.skills-bar .bar .progress-line .cloudai {
-    width: 70%;
-}
-
-.skills-bar .bar .progress-line .crewai {
-    width: 65%;
-}
-
-.skills-bar .bar .progress-line .langchain {
+.skills-bar .bar .progress-line .java {
     width: 80%;
 }
 
-.skills-bar .bar .progress-line .langgraph {
+.skills-bar .bar .progress-line .flask {
+    width: 80%;
+}
+
+.skills-bar .bar .progress-line .fastapi {
     width: 75%;
 }
 
 .skills-bar .bar .progress-line .git {
-    width: 85%;
+    width: 90%;
 }
 
 .skills-bar .bar .progress-line .github {
+    width: 90%;
+}
+
+.skills-bar .bar .progress-line .agentverse {
     width: 80%;
+}
+
+.skills-bar .bar .progress-line .npm {
+    width: 70%;
 }
 
 .skills-bar .bar .progress-line .uiux {
     width: 65%;
 }
+
 
 /* Education Section Styling */
 .education-container {
