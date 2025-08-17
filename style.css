@@ -452,6 +452,13 @@ span{
 .skills-bar .bar .progress-line .mlconcepts {
     width: 70%;
 }
+.skills-bar .bar .progress-line .langchain {
+    width: 80%;
+}
+
+.skills-bar .bar .progress-line .langgraph {
+    width: 75%;
+}
 
 .skills-bar .bar .progress-line .python {
     width: 95%;
